@@ -113,10 +113,7 @@ html, body {
 }
 
 .footer {
-  position: absolute;
   width: 100%;
-  bottom: 0;
-  left: 0;
   background-color: #0e1824;
   color: #8d8d91;
   font-size: 14px;
