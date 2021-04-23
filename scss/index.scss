@@ -1,0 +1,46 @@
+@import '_need.scss';
+@import '_mixins.scss';
+@import '_header.scss';
+
+.content {
+  padding-top: 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 24px 0;
+  }
+}
+
+.form__adress__input,
+.form__adress__btn {
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.form__adress__input{
+  padding: 8px;
+  width: 500px;
+}
+
+.form__adress__btn {
+  appearance:none;
+  -webkit-appearance:none;
+  padding: 10px;
+  border: none;
+  background: #3F51B5;
+  color: #FFF;
+  width: 120px;
+
+  &:hover {
+    background: #E27715;
+    cursor: pointer;
+  }
+}
+
+@import '_footer.scss';

@@ -1,0 +1,48 @@
+@import '_mixins.scss';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+
+  &__logo img {
+    height: 50px;
+  }
+
+  &__nav {
+    margin: 0;
+    padding: 4px;
+
+    &__list {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    &__item {
+      font-weight: 600;
+      font-size: 12px;
+      padding: 10px;
+      cursor: pointer;
+      padding: 10px 30px;
+      margin: 0;
+      background-color: #3F51B5;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: #e27715;
+      }
+    }
+
+    &__link {
+      text-decoration: none;
+      vertical-align: middle;
+      color: #fff;
+    }
+  }
+}
+
+.content {
+  padding-top: 50px;
+}
