@@ -1,0 +1,23 @@
+.map {
+    padding-top: 10px;
+    width: 100%;
+    height: 400px;
+}
+
+.hotels-list {
+    padding: 20px 10px;
+}
+
+.hotels-list p {
+    padding-left: 10px;
+}
+
+.hotels-list .address,
+.hotels-list .work-time,
+.hotels-list .phone {
+    font-size: 12px;
+}
+
+.hotels-list .line {
+    border-bottom: 1px solid #3F51B5;
+}
