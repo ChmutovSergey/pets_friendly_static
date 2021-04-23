@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Pets Friendly &#124; Лучшие отели для питомцев</title>
+        <meta name="description" content="Отели для животных в Москве и области. Актуальная информация об услугах в Москве, удобный поиск гостиницы для животных — адреса на карте, отзывы с рейтингом и фотографиями." />
+        <link rel="stylesheet" type="text/css" href="css/base.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=87fd95de-0946-48f2-b611-edd134ddf8ec" type="text/javascript"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <a href="/"><img src="img/logo.jpg" alt="Logo"></a>
+                </div>
+                <div class="top-menu">
+                    <ul>
+                        <li><a href="/">Добавить свой отель</a></li>
+                    </ul>
+                </div>
+            </header>
+			<div class="content">
+				<h1>Найдем лучший отель для Вашего питомца там, где Вам удобно!</h1>
+				<form name="search-city" method="GET" class="set_address">
+					<p class="address"><input class="text_address" type="text" id="input_address" placeholder="Введите адрес" autofocus></p>
+					<p class="address"><input class="button_address" type="button" onclick="getGeoCode()" value="Найти"></p>
+				</form>
+			</div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4"></div>
+                    <div class="col-4"></div>
+                    <div class="col-4"></div>
+                    <div class="col-4">
+                        <ul class="footer-navigation-link-list">
+                            <li class="footer-navigation-link">
+                                <a href="help.html">Связаться с нами</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
