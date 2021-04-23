@@ -1,0 +1,103 @@
+@import '_need.scss';
+@import '_mixins.scss';
+@import '_header.scss';
+
+.content {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+  }
+
+  &__content {
+    width: 680px;
+
+    &__form {
+
+      &__name,
+      &__phone,
+      &__email,
+      &__msg {
+        color: #676767;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        padding: 5px 10px;
+        font-size: 15px;
+        line-height: 1.4em;
+
+        &:focus {
+          border-style: solid;
+          border-color: #bababa;
+          color: #444;
+        }
+
+        &.error {
+          border-color: #973D3D;
+          border-style: solid;
+          background: #F0BEBE;
+          color: #A35959;
+
+          &:focus {
+            border-color: #973D3D;
+            color: #A35959;
+          }
+        }
+      }
+
+      &__name,
+      &__phone,
+      &__email {
+        width: 200px;
+      }
+
+      &__msg {
+        width: 653px;
+        min-height: 150px;
+        max-height: 400px;
+      }
+
+      &__agreement {
+        &__text {
+          font-size: 12px;
+        }
+      }
+
+      &__btn {
+        color: #fff;
+        margin: 20px 0;
+        padding: 10px;
+        font-size: 12px;
+        font-weight: 600;
+        border: solid 1px #f9f9f9;
+        border-radius: 5px;
+        background: #3F51B5;
+        width: 680px;
+
+        &:hover {
+          background: #E27715;
+          cursor: pointer;
+        }
+
+        &:active,
+        &:focus {
+          outline: none;
+        }
+
+        &.blocked{
+          opacity: 0.75;
+          cursor: default;
+          &:hover{
+            background: #3F51B5;
+          }
+        }
+      }
+    }
+  }
+}
+
+@import '_footer.scss';
