@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Pets Friendly &#124; Центр поддержки</title>
+        <meta name="description" content="В Центре поддержки пользователей Вы можете описать свою проблему, либо оставить отзыв о сервисе.
+И команда Pets Friendly обязательно Вам ответит!" />
+        <link rel="stylesheet" type="text/css" href="css/base.css">
+        <link rel="stylesheet" type="text/css" href="css/help.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <a href="/"><img src="img/logo.jpg" alt="Logo"></a>
+                </div>
+                <div class="top-menu">
+                    <ul>
+                        <li><a href="/">Добавить свой отель</a></li>
+                    </ul>
+                </div>
+            </header>
+            <div class="content">
+                <h1>Центр поддержки</h1>
+				<div class="inline">
+					<form action="#" method="post" name="contact">
+						<input class="txt" name="name" type="name" placeholder="Имя">
+						<input class="txt" name="phone" type="phone" placeholder="Номер телефона">
+						<input class="txt" name="email" type="email" placeholder="E-mail">
+						<textarea class="txt-area" name="msg" placeholder="Текст сообщения:"></textarea>
+						<input type="checkbox" id="agreement" onchange="document.getElementById('send').disabled = !this.checked;">
+						<label for="agreement">
+							<span>Подтверждаю согласие на отправку моих персональных данных.
+								<a target="new" href="#">Политика конфиденциальности</a>
+							</span>
+						</label>
+					</form>
+					<button class="send">Отправить</button>
+				</div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4"></div>
+                    <div class="col-4"></div>
+                    <div class="col-4"></div>
+                    <div class="col-4">
+                        <ul class="footer-navigation-link-list">
+                            <li class="footer-navigation-link">
+                                <a href="help.html">Связаться с нами</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
