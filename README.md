@@ -1,0 +1,1 @@
+# pets_friendly_static
