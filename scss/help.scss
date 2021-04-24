@@ -18,9 +18,16 @@
     width: 680px;
 
     &__form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .margin-auto{
+        width: 100%;
+        text-align: center;
+      }
 
       &__name,
-      &__phone,
       &__email,
       &__msg {
         color: #676767;
@@ -50,13 +57,12 @@
       }
 
       &__name,
-      &__phone,
       &__email {
-        width: 200px;
+        width: 45%;
       }
 
       &__msg {
-        width: 653px;
+        width: 100%;
         min-height: 150px;
         max-height: 400px;
       }

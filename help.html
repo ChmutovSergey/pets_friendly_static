@@ -26,14 +26,12 @@
         <div class="content">
             <span class="content__title">Центр поддержки</span>
             <div class="content__content">
-                <form action="#" method="post" name="contact" class="content__content__form">
-                    <input type="text" name="name" class="content__content__form__name" placeholder="Имя" required>
-                    <input type="tel" name="phone" class="content__content__form__phone" placeholder="Номер телефона" required>
-                    <input type="email" name="email" class="content__content__form__email" placeholder="E-mail" required>
-                    <textarea name="msg" class="content__content__form__msg" cols="30" rows="10" placeholder="Текст сообщения:"
-                        required></textarea>
+                <form action="#" method="get" name="contact" class="content__content__form">
+                    <input type="text" name="name" class="content__content__form__name" placeholder="Имя" id="name" required>
+                    <input type="email" name="email" class="content__content__form__email" placeholder="E-mail" id="email" required>
+                    <textarea name="msg" class="content__content__form__msg" cols="30" rows="10" placeholder="Текст сообщения:" id="msg" required></textarea>
                     <div class="margin-auto">
-                        <input type="checkbox" id="agreement">
+                        <input type="checkbox" id="agreement" required>
                         <label for="agreement">
                             <span class="content__content__form__agreement__text">Подтверждаю согласие на отправку моих персональных данных.
                                 <a target="new" href="https://pets-friendly.ru/privacy/">Политика конфиденциальности</a>

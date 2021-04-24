@@ -87,7 +87,23 @@ html, body {
   width: 680px;
 }
 
-.content__content__form__name, .content__content__form__phone, .content__content__form__email, .content__content__form__msg {
+.content__content__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content__content__form .margin-auto {
+  width: 100%;
+  text-align: center;
+}
+
+.content__content__form__name, .content__content__form__email, .content__content__form__msg {
   color: #676767;
   margin-bottom: 10px;
   border: 1px solid #ccc;
@@ -96,30 +112,30 @@ html, body {
   line-height: 1.4em;
 }
 
-.content__content__form__name:focus, .content__content__form__phone:focus, .content__content__form__email:focus, .content__content__form__msg:focus {
+.content__content__form__name:focus, .content__content__form__email:focus, .content__content__form__msg:focus {
   border-style: solid;
   border-color: #bababa;
   color: #444;
 }
 
-.content__content__form__name.error, .content__content__form__phone.error, .content__content__form__email.error, .content__content__form__msg.error {
+.content__content__form__name.error, .content__content__form__email.error, .content__content__form__msg.error {
   border-color: #973D3D;
   border-style: solid;
   background: #F0BEBE;
   color: #A35959;
 }
 
-.content__content__form__name.error:focus, .content__content__form__phone.error:focus, .content__content__form__email.error:focus, .content__content__form__msg.error:focus {
+.content__content__form__name.error:focus, .content__content__form__email.error:focus, .content__content__form__msg.error:focus {
   border-color: #973D3D;
   color: #A35959;
 }
 
-.content__content__form__name, .content__content__form__phone, .content__content__form__email {
-  width: 200px;
+.content__content__form__name, .content__content__form__email {
+  width: 45%;
 }
 
 .content__content__form__msg {
-  width: 653px;
+  width: 100%;
   min-height: 150px;
   max-height: 400px;
 }
