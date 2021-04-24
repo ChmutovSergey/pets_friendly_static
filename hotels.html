@@ -11,32 +11,50 @@
 
 <body>
     <div class="wrapper">
-        <header>
-            <div class="logo">
+<header class="header">
+            <div class="header__logo">
                 <a href="/"><img src="img/logo.jpg" alt="Logo"></a>
             </div>
-            <div class="top-menu">
-                <ul>
-                    <li><a href="/">Добавить свой отель</a></li>
+            <nav class="header__nav">
+                <ul class="header__nav__list">
+                    <li class="header__nav__item">
+                        <a href="/" class="header__nav__link">Добавить свой отель</a>
+                    </li>
                 </ul>
-            </div>
+            </nav>
         </header>
         <div class="content">
-            <h1>Гостиницы для животных в Москве</h1>
-            <div class="map" id="map"></div>
-            <div class="hotels-list">
-                <div class="line"></div>
-                <h2>Название отеля 1</h2>
-                <p class="address">Адрес отеля 1</p>
-                <p class="work-time">Режим работы: Круглосуточно</p>
-                <p class="phone">+7 (495) 888-88-88</p>
-                <p class="description">Это длинное описание 1</p>
-                <div class="line"></div>
-                <h2>Название отеля 2</h2>
-                <p class="address">Адрес отеля 2</p>
-                <p class="work-time">Режим работы: Круглосуточно</p>
-                <p class="phone">+7 (495) 888-88-88</p>
-                <p class="description">Это длинное описание 2</p>
+            <span class="content__title">Гостиницы для животных в Москве</span>
+            <div class="content__map" id="map"></div>
+            <div class="content__hotels-list">
+                <ul class="content__hotels-list__list">
+                    <li class="content__hotels-list__item">
+                        <div class="content__hotels-list__content">
+                            <span class="content__hotels-list__content__title">Название отеля 1</span>
+                            <div class="padding-left">
+                                <span class="content__hotels-list__content__address">Адрес отеля 1</span>
+                                <span class="content__hotels-list__content__work-time">Режим работы:
+                                    Круглосуточно</span>
+                                <a href="tel:+74958888888" class="content__hotels-list__content__phone">+7 (495)
+                                    888-88-88</a>
+                                <span class="content__hotels-list__content__desc">Это длинное описание 1</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content__hotels-list__item">
+                        <div class="content__hotels-list__content">
+                            <span class="content__hotels-list__content__title">Название отеля 1</span>
+                            <div class="padding-left">
+                                <span class="content__hotels-list__content__address">Адрес отеля 1</span>
+                                <span class="content__hotels-list__content__work-time">Режим работы:
+                                    Круглосуточно</span>
+                                <a href="tel:+74958888888" class="content__hotels-list__content__phone">+7 (495)
+                                    888-88-88</a>
+                                <span class="content__hotels-list__content__desc">Это длинное описание 2</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -61,7 +79,7 @@
 
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=87fd95de-0946-48f2-b611-edd134ddf8ec"
         type="text/javascript"></script>
-    <script type="text/javascript" src="js/hotels.js"></script>
+<script src="js/hotels.js"></script>
 </body>
 
 </html>
