@@ -101,7 +101,7 @@ form.onsubmt = () => {
     }
   }
   // строка с параметрами для отправки
-  var body = "name=" + data.name + "&email=" + data.email + "&msg=" + data.msg;
+  var body = `name=${data.name}&email=${data.email}&msg=${data.msg}`;
   request.open("GET", 'url' + body);
   request.onreadystatechange = reqReadyStateChange;
   request.send();
