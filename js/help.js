@@ -3,6 +3,7 @@ const btn = document.querySelector("#send");
 const textarea = document.querySelector('#msg');
 const nameI = document.querySelector('#name');
 const email = document.querySelector('#email');
+const form = document.querySelector('#form');
 let correctText = false;
 let correctCheck = false;
 let correctName = false;
@@ -46,7 +47,7 @@ nameI.oninput = () => {
 }
 
 email.oninput = () => {
-  const regexp = /@/gi;
+  const regexp = /^([a-z0-9_-]+.)[a-z0-9_-]+@[a-z0-9_-]+(.[a-z0-9_-]+).[a-z]{2,6}$/gi;
   const emailText = email.value;
   correctEmail = regexp.test(emailText);
 
@@ -79,4 +80,29 @@ checkbox.onchange = () => {
     btn.disabled = true;
     btn.classList.add('blocked');
   }
+}
+
+form.onsubmt = () => {
+  let data = {
+    name: nameI.value,
+    email: email.value,
+    msg: msg.value
+  };
+
+  var request = new XMLHttpRequest();
+
+  function reqReadyStateChange() {
+    if (request.readyState == 4) {
+      var status = request.status;
+      if (status == 200) {
+        document.getElementById("output").innerHTML = request.responseText;
+        console.log(request.responseText)
+      }
+    }
+  }
+  // строка с параметрами для отправки
+  var body = "name=" + data.name + "&email=" + data.email + "&msg=" + data.msg;
+  request.open("GET", 'url' + body);
+  request.onreadystatechange = reqReadyStateChange;
+  request.send();
 }
