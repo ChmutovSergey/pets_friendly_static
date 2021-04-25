@@ -128,13 +128,26 @@ html, body {
           flex-direction: column;
 }
 
-.content__hotels-list__content__address, .content__hotels-list__content__work-time, .content__hotels-list__content__phone {
+.content__hotels-list__content__address, .content__hotels-list__content__work-time, .content__hotels-list__content__phone, .content__hotels-list__content__metro {
   font-size: 12px;
   margin: 0 0 10px 0;
 }
 
 .content__hotels-list__content__phone {
   margin-bottom: 20px;
+}
+
+.content__hotels-list__content__metro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content__hotels-list__content__metro__icon {
+  margin: 0 10px 0 0;
 }
 
 .content__hotels-list .line {
