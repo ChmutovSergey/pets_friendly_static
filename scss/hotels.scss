@@ -51,13 +51,23 @@
 
       &__address,
       &__work-time,
-      &__phone {
+      &__phone,
+      &__metro {
         font-size: 12px;
         margin: 0 0 10px 0;
       }
 
       &__phone {
         margin-bottom: 20px;
+      }
+
+      &__metro{
+        display: flex;
+        align-items: center;
+
+        &__icon{
+          margin: 0 10px 0 0;
+        }
       }
     }
 

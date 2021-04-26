@@ -11,7 +11,7 @@
 
 <body>
     <div class="wrapper">
-<header class="header">
+        <header class="header">
             <div class="header__logo">
                 <a href="/"><img src="img/logo.jpg" alt="Logo"></a>
             </div>
@@ -27,33 +27,17 @@
             <span class="content__title">Гостиницы для животных в Москве</span>
             <div class="content__map" id="map"></div>
             <div class="content__hotels-list">
-                <ul class="content__hotels-list__list">
-                    <li class="content__hotels-list__item">
-                        <div class="content__hotels-list__content">
-                            <span class="content__hotels-list__content__title">Название отеля 1</span>
-                            <div class="padding-left">
-                                <span class="content__hotels-list__content__address">Адрес отеля 1</span>
-                                <span class="content__hotels-list__content__work-time">Режим работы:
-                                    Круглосуточно</span>
-                                <a href="tel:+74958888888" class="content__hotels-list__content__phone">+7 (495)
-                                    888-88-88</a>
-                                <span class="content__hotels-list__content__desc">Это длинное описание 1</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="content__hotels-list__item">
-                        <div class="content__hotels-list__content">
-                            <span class="content__hotels-list__content__title">Название отеля 1</span>
-                            <div class="padding-left">
-                                <span class="content__hotels-list__content__address">Адрес отеля 1</span>
-                                <span class="content__hotels-list__content__work-time">Режим работы:
-                                    Круглосуточно</span>
-                                <a href="tel:+74958888888" class="content__hotels-list__content__phone">+7 (495)
-                                    888-88-88</a>
-                                <span class="content__hotels-list__content__desc">Это длинное описание 2</span>
-                            </div>
-                        </div>
-                    </li>
+                <ul class="content__hotels-list__list" id="vue">
+                    <hotel v-for="(item, index) in hotelList"
+                    :key="index"
+                    :name="item.title"
+                    :address="item.address"
+                    :desc="item.short_description"
+                    :time="item.work_time"
+                    :phone="item.phone"
+                    :item="item"
+                    :metro="item.metro">
+                    </hotel>
                 </ul>
             </div>
         </div>
@@ -77,9 +61,10 @@
         </div>
     </footer>
 
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=87fd95de-0946-48f2-b611-edd134ddf8ec"
-        type="text/javascript"></script>
-<script src="js/hotels.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="js/hotel-item.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=87fd95de-0946-48f2-b611-edd134ddf8ec"></script>
+    <script src="js/hotels.js"></script>
 </body>
 
 </html>
