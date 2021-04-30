@@ -45,10 +45,12 @@ Vue.component('hotel', {
       <span class="content__hotels-list__content__title">{{name}}</span>
       <div class="padding-left">
           <span class="content__hotels-list__content__address">{{address}}</span>
-          <metro v-for="(metro, index) in item.metro"
-            :key="index"
-            :name="item.metro[index][0]"
-            :link="item.metro[index][1]"></metro>
+          <div class="flex">
+            <metro v-for="(metro, index) in item.metro"
+              :key="index"
+              :name="item.metro[index][0]"
+              :link="item.metro[index][1]"/>
+          </div>
           <span class="content__hotels-list__content__work-time">Режим работы: {{time}}</span>
           <a href="tel:+74958888888" class="content__hotels-list__content__phone">{{phone}}</a>
           <span class="content__hotels-list__content__desc">{{desc}}</span>

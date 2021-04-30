@@ -11,15 +11,9 @@ html, body {
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   padding: 20px 0;
 }
 
@@ -66,16 +60,9 @@ html, body {
 .content {
   padding-top: 100px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .content__title {
@@ -84,21 +71,19 @@ html, body {
   margin: 0 0 24px 0;
 }
 
-.form__adress__input,
-.form__adress__btn {
+.content .form__adress__input, .content .form__adress__btn {
   font-weight: 600;
   font-size: 18px;
   border-radius: 5px;
 }
 
-.form__adress__input {
+.content .form__adress__input {
   padding: 8px;
   width: 500px;
 }
 
-.form__adress__btn {
-  -moz-appearance: none;
-       appearance: none;
+.content .form__adress__btn {
+  appearance: none;
   -webkit-appearance: none;
   padding: 10px;
   border: none;
@@ -107,9 +92,15 @@ html, body {
   width: 120px;
 }
 
-.form__adress__btn:hover {
+.content .form__adress__btn:hover {
   background: #E27715;
   cursor: pointer;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .footer {
@@ -135,15 +126,9 @@ html, body {
   padding: 0 10%;
   padding-top: 10px;
   padding-bottom: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .footer__content__tab {
