@@ -1,21 +1,23 @@
-@import '_mixins.scss';
+@import './mixins';
+@import './needs';
+
 .footer {
   width: 100%;
-  background-color: #0e1824;
-  color: #8d8d91;
+  background-color: $c11;
+  color: $c12;
   font-size: 14px;
 
   a {
     &:link {
-      color: #c0c0c2;
+      color: $c13;
     }
 
     &:visited {
-      color: #737378;
+      color: $c14;
     }
 
     &:hover {
-      color: #e27715;
+      color: $c9;
     }
   }
 
@@ -30,7 +32,7 @@
     &__tab {
       width: 24%;
 
-      &__logo{
+      &__logo {
         width: 100%;
         height: auto;
       }
