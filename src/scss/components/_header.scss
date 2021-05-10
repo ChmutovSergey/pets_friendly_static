@@ -1,4 +1,5 @@
-@import '_mixins.scss';
+@import './mixins';
+@import './needs';
 
 .header {
   display: flex;
@@ -27,18 +28,18 @@
       cursor: pointer;
       padding: 10px 30px;
       margin: 0;
-      background-color: #3F51B5;
+      background-color: $c8;
       border-radius: 5px;
 
       &:hover {
-        background-color: #e27715;
+        background-color: $c9;
       }
     }
 
     &__link {
       text-decoration: none;
       vertical-align: middle;
-      color: #fff;
+      color: $white;
     }
   }
 }
